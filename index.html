@@ -11,7 +11,7 @@
 <style>
 body {
     margin:0;
-    font-family:Poppins, sans-serif;
+    font-family:Poppins;
     background:#0a1e3f;
     color:white;
 }
@@ -19,61 +19,49 @@ body {
 header {
     display:flex;
     justify-content:space-between;
-    align-items:center;
     padding:15px 40px;
     background:#081731;
-}
-
-header h2 {
-    margin:0;
 }
 
 nav a {
     color:white;
     margin:0 10px;
     text-decoration:none;
-    font-weight:500;
 }
 
 .hero {
-    padding:60px 40px;
-    background:linear-gradient(135deg,#0a1e3f,#123b7a);
+    display:flex;
+    align-items:center;
+    padding:50px;
+    gap:40px;
+}
+
+.hero img {
+    width:300px;
 }
 
 .hero h1 {
     font-size:42px;
     color:#FFC107;
-    margin-bottom:10px;
-}
-
-.hero p {
-    font-size:18px;
-    max-width:600px;
 }
 
 .btn {
-    display:inline-block;
     background:#FFC107;
     padding:12px 25px;
     border-radius:30px;
     text-decoration:none;
     color:black;
     font-weight:bold;
-    margin-top:20px;
 }
 
 .section {
-    padding:50px 40px;
-}
-
-.section h2 {
-    margin-bottom:20px;
+    padding:50px;
 }
 
 .cards {
     display:flex;
-    flex-wrap:wrap;
     gap:20px;
+    flex-wrap:wrap;
 }
 
 .card {
@@ -84,11 +72,21 @@ nav a {
     min-width:250px;
 }
 
+.history {
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.history img {
+    width:300px;
+    border-radius:10px;
+}
+
 .footer {
     background:#081731;
     padding:20px;
     text-align:center;
-    font-size:14px;
 }
 </style>
 
@@ -98,80 +96,119 @@ nav a {
 
 <header>
     <h2>Zhanlin Marketing</h2>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Activities</a>
-        <a href="#">Contact</a>
-    </nav>
 </header>
 
+<!-- HERO -->
+
 <section class="hero">
-    <h1>25 Years of Reliable Service</h1>
-    <p>Your trusted Unilever distributor across Samar and Tacloban. Delivering excellent service, strong partnerships, and consistent supply.</p>
-    <a href="https://www.facebook.com" class="btn">Message Us on Facebook</a>
+    <div>
+        <h1>25 Years of Reliable Service</h1>
+        <p>Your trusted Unilever distributor across Samar and Tacloban.</p>
+
+```
+    <!-- FACEBOOK LINK -->
+    <a href="https://www.facebook.com/ZhanlinOfficial" target="_blank" class="btn">
+        Message Us on Facebook
+    </a>
+</div>
+
+<!-- IMAGE BESIDE HERO -->
+<img src="https://via.placeholder.com/300" alt="Company Image">
+```
+
 </section>
+
+<!-- SERVICES -->
 
 <section class="section">
     <h2>What We Offer</h2>
     <div class="cards">
-        <div class="card">
-            <h3>Free Delivery</h3>
-            <p>Fast and reliable delivery across Samar and Tacloban.</p>
-        </div>
-        <div class="card">
-            <h3>Loyalty Rewards</h3>
-            <p>Earn points and enjoy exclusive benefits as a valued partner.</p>
-        </div>
-        <div class="card">
-            <h3>Exclusive Discounts</h3>
-            <p>Get additional savings on bundled Unilever products.</p>
-        </div>
+
+```
+    <div class="card">
+        🚚 <h3>Free Delivery</h3>
+        <p>Fast and reliable delivery.</p>
     </div>
+
+    <div class="card">
+        🪙 <h3>Loyalty Rewards</h3>
+        <p>Earn points and rewards.</p>
+    </div>
+
+    <div class="card">
+        💸 <h3>Exclusive Discounts</h3>
+        <p>Get extra savings on products.</p>
+    </div>
+
+</div>
+```
+
 </section>
 
-<section class="section">
-    <h2>Company History</h2>
-    <p>
-    It all began on August 1, 2001, with a vision rooted in love. Founded by Boss Oscar as a gift for his wife Elizabeth Ty, Zhanlin Marketing has grown from a team of 9 into a company of over 150 employees serving more than 5,000 partners. We continue to bring essential home and personal care products across Samar and Tacloban, helping communities thrive.
-    </p>
+<!-- COMPANY HISTORY -->
+
+<section class="section history">
+    <div>
+        <h2>Company History</h2>
+        <p>
+        It all began on August 1, 2001, with a vision rooted in love. From a team of 9, we grew to over 150 employees serving 5,000+ partners.
+        </p>
+    </div>
+
+```
+<!-- IMAGE RIGHT SIDE -->
+<img src="https://via.placeholder.com/300" alt="History Image">
+```
+
 </section>
 
+<!-- BRANCHES -->
+
 <section class="section">
-    <h2>Our Branches</h2>
+    <h2>📍 Our Branches</h2>
     <div class="cards">
-        <div class="card">
-            <h3>Tacloban Branch</h3>
-            <p>Brgy. 69, Tacloban City (Near Petron)</p>
-            <p>09071879421</p>
-        </div>
-        <div class="card">
-            <h3>Catarman Branch</h3>
-            <p>Kasmencor Bldg., Balite St., Catarman</p>
-            <p>09557232532</p>
-        </div>
-        <div class="card">
-            <h3>Borongan Branch</h3>
-            <p>Real St., City of Borongan</p>
-            <p>09976777938</p>
-        </div>
-        <div class="card">
-            <h3>Calbayog Branch</h3>
-            <p>Maharlika Highway, Beside Rice Mill</p>
-            <p>09631196453</p>
-        </div>
+
+```
+    <div class="card">
+        📍 <h3>
+        <a href="https://maps.app.goo.gl/5Qb6KakcaehcJKZJ7" target="_blank">Tacloban</a>
+        </h3>
     </div>
+
+    <div class="card">
+        📍 <h3>
+        <a href="https://maps.app.goo.gl/QcuvufgYAkfd84vs7" target="_blank">Catarman</a>
+        </h3>
+    </div>
+
+    <div class="card">
+        📍 <h3>
+        <a href="https://maps.app.goo.gl/KcL7TELYc3LPy4Ef9h" target="_blank">Borongan</a>
+        </h3>
+    </div>
+
+    <div class="card">
+        📍 <h3>
+        <a href="https://maps.app.goo.gl/WcdEYYTA88DJUcTW6" target="_blank">Calbayog</a>
+        </h3>
+    </div>
+
+</div>
+```
+
 </section>
 
+<!-- CONTACT -->
+
 <section class="section">
-    <h2>Contact Us</h2>
-    <p><strong>Customer Service:</strong> +63 948 858 5021</p>
-    <p>Monday–Friday: 8:00 AM – 12:00 NN | 1:00 PM – 4:50 PM</p>
+    <h2>📞 Contact Us</h2>
+    <p>📞 +63 948 858 5021</p>
 </section>
+
+<!-- FOOTER -->
 
 <div class="footer">
-    © Zhanlin Marketing | CEOs: Chrystel Kate Ty & Kurt Ryan Ty
+    Created by: DTS Angel 2026
 </div>
 
 </body>
