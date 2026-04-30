@@ -11,7 +11,7 @@
 <style>
 body {
     margin:0;
-    font-family:Poppins;
+    font-family:Poppins, sans-serif;
     background:#0a1e3f;
     color:white;
 }
@@ -23,6 +23,10 @@ header {
     background:#081731;
 }
 
+header h2 {
+    margin:0;
+}
+
 nav a {
     color:white;
     margin:0 10px;
@@ -30,14 +34,8 @@ nav a {
 }
 
 .hero {
-    display:flex;
-    align-items:center;
-    padding:50px;
-    gap:40px;
-}
-
-.hero img {
-    width:300px;
+    padding:80px 40px;
+    background:linear-gradient(to right,#0a1e3f,#123b7a);
 }
 
 .hero h1 {
@@ -45,7 +43,13 @@ nav a {
     color:#FFC107;
 }
 
+.hero p {
+    max-width:600px;
+}
+
 .btn {
+    display:inline-block;
+    margin-top:20px;
     background:#FFC107;
     padding:12px 25px;
     border-radius:30px;
@@ -55,7 +59,7 @@ nav a {
 }
 
 .section {
-    padding:50px;
+    padding:50px 40px;
 }
 
 .cards {
@@ -75,11 +79,19 @@ nav a {
 .history {
     display:flex;
     gap:30px;
-    align-items:center;
+    flex-wrap:wrap;
 }
 
-.history img {
-    width:300px;
+.history-text {
+    flex:1;
+}
+
+.history-img {
+    flex:1;
+}
+
+.history-img img {
+    width:100%;
     border-radius:10px;
 }
 
@@ -96,24 +108,25 @@ nav a {
 
 <header>
     <h2>Zhanlin Marketing</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Activities</a>
+        <a href="#">Contact</a>
+    </nav>
 </header>
 
 <!-- HERO -->
 
 <section class="hero">
-    <div>
-        <h1>25 Years of Reliable Service</h1>
-        <p>Your trusted Unilever distributor across Samar and Tacloban.</p>
+    <h1>25 Years of Reliable Service</h1>
+    <p>Your trusted Unilever distributor across Samar and Tacloban. Delivering excellent service, strong partnerships, and consistent supply.</p>
 
 ```
-    <!-- FACEBOOK LINK -->
-    <a href="https://www.facebook.com/ZhanlinOfficial" target="_blank" class="btn">
-        Message Us on Facebook
-    </a>
-</div>
-
-<!-- IMAGE BESIDE HERO -->
-<img src="https://via.placeholder.com/300" alt="Company Image">
+<a href="https://www.facebook.com/ZhanlinOfficial" target="_blank" class="btn">
+    Message Us on Facebook
+</a>
 ```
 
 </section>
@@ -126,18 +139,18 @@ nav a {
 
 ```
     <div class="card">
-        🚚 <h3>Free Delivery</h3>
-        <p>Fast and reliable delivery.</p>
+        <h3>🚚 Free Delivery</h3>
+        <p>Fast and reliable delivery across Samar and Tacloban.</p>
     </div>
 
     <div class="card">
-        🪙 <h3>Loyalty Rewards</h3>
-        <p>Earn points and rewards.</p>
+        <h3>🪙 Loyalty Rewards</h3>
+        <p>Earn points and enjoy exclusive benefits.</p>
     </div>
 
     <div class="card">
-        💸 <h3>Exclusive Discounts</h3>
-        <p>Get extra savings on products.</p>
+        <h3>💸 Exclusive Discounts</h3>
+        <p>Get additional savings on bundled products.</p>
     </div>
 
 </div>
@@ -148,16 +161,18 @@ nav a {
 <!-- COMPANY HISTORY -->
 
 <section class="section history">
-    <div>
-        <h2>Company History</h2>
-        <p>
-        It all began on August 1, 2001, with a vision rooted in love. From a team of 9, we grew to over 150 employees serving 5,000+ partners.
-        </p>
-    </div>
 
 ```
-<!-- IMAGE RIGHT SIDE -->
-<img src="https://via.placeholder.com/300" alt="History Image">
+<div class="history-text">
+    <h2>Company History</h2>
+    <p>
+    It all began on August 1, 2001, with a vision rooted in love. Founded by Boss Oscar as a gift for his wife Elizabeth Ty, Zhanlin Marketing has grown from a team of 9 into a company of over 150 employees serving more than 5,000 partners across Samar and Tacloban.
+    </p>
+</div>
+
+<div class="history-img">
+    <img src="https://via.placeholder.com/500" alt="Company Image">
+</div>
 ```
 
 </section>
@@ -170,27 +185,19 @@ nav a {
 
 ```
     <div class="card">
-        📍 <h3>
-        <a href="https://maps.app.goo.gl/5Qb6KakcaehcJKZJ7" target="_blank">Tacloban</a>
-        </h3>
+        <h3>📍 <a href="https://maps.app.goo.gl/5Qb6KakcaehcJKZJ7" target="_blank">Tacloban Branch</a></h3>
     </div>
 
     <div class="card">
-        📍 <h3>
-        <a href="https://maps.app.goo.gl/QcuvufgYAkfd84vs7" target="_blank">Catarman</a>
-        </h3>
+        <h3>📍 <a href="https://maps.app.goo.gl/QcuvufgYAkfd84vs7" target="_blank">Catarman Branch</a></h3>
     </div>
 
     <div class="card">
-        📍 <h3>
-        <a href="https://maps.app.goo.gl/KcL7TELYc3LPy4Ef9h" target="_blank">Borongan</a>
-        </h3>
+        <h3>📍 <a href="https://maps.app.goo.gl/KcL7TELYc3LPy4Ef9h" target="_blank">Borongan Branch</a></h3>
     </div>
 
     <div class="card">
-        📍 <h3>
-        <a href="https://maps.app.goo.gl/WcdEYYTA88DJUcTW6" target="_blank">Calbayog</a>
-        </h3>
+        <h3>📍 <a href="https://maps.app.goo.gl/WcdEYYTA88DJUcTW6" target="_blank">Calbayog Branch</a></h3>
     </div>
 
 </div>
@@ -202,7 +209,8 @@ nav a {
 
 <section class="section">
     <h2>📞 Contact Us</h2>
-    <p>📞 +63 948 858 5021</p>
+    <p>📞 Customer Service: +63 948 858 5021</p>
+    <p>Monday–Friday: 8:00 AM – 4:50 PM</p>
 </section>
 
 <!-- FOOTER -->
