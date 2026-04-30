@@ -16,6 +16,7 @@ body {
     color:white;
 }
 
+/* HEADER */
 header {
     display:flex;
     justify-content:space-between;
@@ -24,47 +25,63 @@ header {
     background:#081731;
 }
 
+.logo {
+    display:flex;
+    align-items:center;
+}
+
+.logo img {
+    width:50px;
+    margin-right:10px;
+}
+
 nav a {
     color:white;
     margin:0 10px;
     text-decoration:none;
-    font-weight:500;
 }
 
+/* HERO */
 .hero {
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:60px 40px;
-    background:linear-gradient(135deg,#0a1e3f,#123b7a);
     flex-wrap:wrap;
+    padding:80px 40px;
+    background:linear-gradient(120deg,#081731,#0a1e3f,#123b7a);
 }
 
 .hero-text {
     max-width:600px;
 }
 
-.hero img {
-    width:300px;
-    border-radius:10px;
-}
-
 .hero h1 {
-    font-size:42px;
+    font-size:48px;
     color:#FFC107;
 }
 
+.hero p {
+    font-size:18px;
+}
+
+.hero img {
+    width:350px;
+    border-radius:10px;
+}
+
+/* BUTTON */
 .btn {
     display:inline-block;
+    margin-top:20px;
     background:#FFC107;
-    padding:12px 25px;
+    padding:14px 30px;
     border-radius:30px;
     text-decoration:none;
     color:black;
     font-weight:bold;
-    margin-top:20px;
 }
 
+/* SECTIONS */
 .section {
     padding:50px 40px;
 }
@@ -77,16 +94,22 @@ nav a {
 
 .card {
     background:#122b5c;
-    padding:20px;
-    border-radius:10px;
+    padding:25px;
+    border-radius:12px;
     flex:1;
     min-width:250px;
+    transition:0.3s;
 }
 
+.card:hover {
+    transform:translateY(-5px);
+}
+
+/* HISTORY */
 .history {
     display:flex;
-    flex-wrap:wrap;
     gap:30px;
+    flex-wrap:wrap;
     align-items:center;
 }
 
@@ -95,6 +118,7 @@ nav a {
     border-radius:10px;
 }
 
+/* FOOTER */
 .footer {
     background:#081731;
     padding:20px;
@@ -107,14 +131,21 @@ nav a {
 <body>
 
 <header>
-    <h2>Zhanlin Marketing</h2>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Activities</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div class="logo">
+        <img src="LOGO_PIC.png">
+        <h2>Zhanlin Marketing</h2>
+    </div>
+
+```
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Activities</a>
+    <a href="#">Contact</a>
+</nav>
+```
+
 </header>
 
 <!-- HERO -->
@@ -123,17 +154,16 @@ nav a {
 
 ```
 <div class="hero-text">
-    <h1>25 Years of Reliable Service</h1>
-    <p>Your trusted Unilever distributor across Samar and Tacloban.</p>
+    <h1>DITO, ALAGANG PAMILYA KA!</h1>
+    <p>Sulit deals, promos, and discounts on your favorite Unilever products across Samar and Tacloban.</p>
 
-    <!-- CLICKABLE FACEBOOK -->
     <a href="https://www.facebook.com/ZhanlinOfficial" target="_blank" class="btn">
-        Message Us on Facebook
+        MESSAGE US TO START
     </a>
 </div>
 
-<!-- IMAGE BESIDE HERO -->
-<img src="https://via.placeholder.com/300" alt="Company Image">
+<!-- YOUR HERO IMAGE -->
+<img src="hero.jpeg" alt="Hero Image">
 ```
 
 </section>
@@ -143,34 +173,41 @@ nav a {
 <section class="section">
     <h2>What We Offer</h2>
     <div class="cards">
-        <div class="card">
-            🚚 <h3>Free Delivery</h3>
-            <p>Fast and reliable delivery across Samar and Tacloban.</p>
-        </div>
-        <div class="card">
-            🪙 <h3>Loyalty Rewards</h3>
-            <p>Earn points and enjoy exclusive benefits.</p>
-        </div>
-        <div class="card">
-            💸 <h3>Exclusive Discounts</h3>
-            <p>Get additional savings on bundled products.</p>
-        </div>
+
+```
+    <div class="card">
+        🚚 <h3>Free Delivery</h3>
+        <p>Fast and reliable delivery across Samar and Tacloban.</p>
     </div>
+
+    <div class="card">
+        🪙 <h3>Loyalty Rewards</h3>
+        <p>Earn points and exclusive benefits.</p>
+    </div>
+
+    <div class="card">
+        💸 <h3>Exclusive Discounts</h3>
+        <p>Save more on bundled products.</p>
+    </div>
+
+</div>
+```
+
 </section>
 
 <!-- COMPANY HISTORY -->
 
 <section class="section history">
-    <div>
-        <h2>Company History</h2>
-        <p>
-        It all began on August 1, 2001, with a vision rooted in love. Founded by Boss Oscar as a gift for his wife Elizabeth Ty, Zhanlin Marketing has grown from a team of 9 into a company of over 150 employees serving more than 5,000 partners.
-        </p>
-    </div>
 
 ```
-<!-- IMAGE RIGHT SIDE -->
-<img src="https://via.placeholder.com/300" alt="History Image">
+<div>
+    <h2>Company History</h2>
+    <p>
+    It all began on August 1, 2001, with a vision rooted in love. Founded by Boss Oscar as a gift for his wife Elizabeth Ty, Zhanlin Marketing has grown from a team of 9 into a company of over 150 employees serving more than 5,000 partners across Samar and Tacloban.
+    </p>
+</div>
+
+<img src="hero.jpeg">
 ```
 
 </section>
@@ -183,31 +220,19 @@ nav a {
 
 ```
     <div class="card">
-        📍 <h3>
-        <a href="https://maps.app.goo.gl/5Qb6KakcaehcJKZJ7" target="_blank">Tacloban Branch</a>
-        </h3>
-        <p>Brgy. 69, Tacloban City</p>
+        📍 <a href="https://maps.app.goo.gl/5Qb6KakcaehcJKZJ7" target="_blank">Tacloban Branch</a>
     </div>
 
     <div class="card">
-        📍 <h3>
-        <a href="https://maps.app.goo.gl/QcuvufgYAkfd84vs7" target="_blank">Catarman Branch</a>
-        </h3>
-        <p>Kasmencor Bldg., Balite St.</p>
+        📍 <a href="https://maps.app.goo.gl/QcuvufgYAkfd84vs7" target="_blank">Catarman Branch</a>
     </div>
 
     <div class="card">
-        📍 <h3>
-        <a href="https://maps.app.goo.gl/KcL7TELYc3LPy4Ef9h" target="_blank">Borongan Branch</a>
-        </h3>
-        <p>Real St., Borongan</p>
+        📍 <a href="https://maps.app.goo.gl/KcL7TELYc3LPy4Ef9h" target="_blank">Borongan Branch</a>
     </div>
 
     <div class="card">
-        📍 <h3>
-        <a href="https://maps.app.goo.gl/WcdEYYTA88DJUcTW6" target="_blank">Calbayog Branch</a>
-        </h3>
-        <p>Maharlika Highway</p>
+        📍 <a href="https://maps.app.goo.gl/WcdEYYTA88DJUcTW6" target="_blank">Calbayog Branch</a>
     </div>
 
 </div>
@@ -218,12 +243,9 @@ nav a {
 <!-- CONTACT -->
 
 <section class="section">
-    <h2>📞 Contact Us</h2>
+    <h2>📞 Contact</h2>
     <p>📞 Customer Service: +63 948 858 5021</p>
-    <p>Monday–Friday: 8:00 AM – 12:00 NN | 1:00 PM – 4:50 PM</p>
 </section>
-
-<!-- FOOTER -->
 
 <div class="footer">
     Created by: DTS Angel 2026
